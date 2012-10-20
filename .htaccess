@@ -1,0 +1,5 @@
+# Turn on mod_rewrite handling
+RewriteEngine On
+# Allows for three wildcards: page, action and id
+RewriteRule (.*?)/(.*?)/(.*?)$
+index.php?page=$1&action=$2&id=$3&param=$4
